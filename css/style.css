@@ -1,0 +1,1371 @@
+body
+{
+    padding: 0;
+    margin: 0;
+}
+.pad-left
+{
+    padding-left: 9vw;
+    padding-right: 9vw;
+}
+.margin-left
+{
+    margin-left: 9vw;
+    margin-right: 9vw;
+}
+.no-pad-left
+{
+    padding-left: 0;
+    padding-right: 0;
+}
+h1
+{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 5.5vw;
+}
+h2
+{
+    font-family: 'Oswald', sans-serif;
+    font-size: 3vw;
+    font-weight: bold;
+    text-align: center;
+}
+h3
+{
+    font-family: 'Oswald', sans-serif;
+    font-size: 2vw;
+    font-weight: bold;
+}
+p
+{
+    font-family: 'Gelasio', serif;
+    font-size: 1.1rem;
+    text-align: justify;
+}
+.button-edit
+{
+    background-color: rgba(50, 169, 224);
+    font-family: 'Oswald', sans-serif;
+    border: 0px;
+    height: 4.5vw;
+    width: 12vw;
+    font-size: 1.8vw;
+}
+.button-edit a
+{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* Navigation Bar */
+nav
+{
+    display: grid;
+    grid-template-columns: 30% auto;
+    align-items: center;
+    background-color: white;
+    padding: 20px 0px;
+}
+#header-image img
+{
+    height: 8vw;
+}
+.topnav {
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: 'Inter', sans-serif;
+  font-weight: bold;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+.dropbtn
+{
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+}
+.dropdown .dropbtn {
+    font-size: 17px;    
+    
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  background-color: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 2;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  font-size: 14px;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  /* background-color: #555; */
+  color: black;
+}
+
+.dropdown-content a:hover {
+  background-color: #b9b9b9;
+  color: black;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.icon img
+{
+    height: 20px;
+}
+@media screen and (max-width: 1200px) 
+{
+  .topnav a, .dropdown .dropbtn 
+  {
+    display: none;
+  }
+  .topnav a.icon 
+  {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1200px) 
+{
+    .pad-left.responsive
+    {
+        display: block;
+        padding: 0;
+    margin-top: 0;
+    }
+  .topnav.responsive 
+  {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background: #1B9DDB;
+  }
+  .topnav.responsive .icon 
+  {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a 
+  {
+    float: none;
+    display: block;
+    text-align: left;
+    font-size:15px;
+  }
+  .header-image-cls.responsive img
+  {
+    display: none;
+  }
+  .topnav.responsive .dropdown {
+    float: none;
+    
+  }
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+    font-size:15px;
+  }
+}
+
+/* SlideShow */
+.mySlides 
+{
+    display: none;
+}
+img 
+{
+    vertical-align: middle;
+}
+.slideshow-container 
+{
+    box-sizing: border-box;
+    font-family: Verdana, sans-serif;
+    width: 100%;
+    position: relative;
+    margin: auto;
+}
+  /* The dots/bullets/indicators */
+  #slide-dot
+  {
+    text-align:center;
+    margin-top: -4vw;
+    position: relative;
+    z-index: +1;
+
+  }
+  #itinerary #slide-dot
+  {
+    margin-top: -2.5vw;
+  }
+.dot 
+{
+    cursor: pointer;
+    height: 1.3vw;
+    width: 1.3vw;
+    margin: 0 2px;
+    background-color: #999999;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.dot:hover 
+{
+    background-color: #111111;
+}  
+/* Fading animation */
+.fade 
+{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade 
+{
+    from 
+    {
+      opacity: .4
+    }
+    to 
+    {
+      opacity: 1
+    }
+}
+@keyframes fade 
+{
+    from 
+    {
+      opacity: .4
+    }
+    to 
+    {
+      opacity: 1
+    }
+}
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) 
+{
+    .prev,
+    .next,
+    .text 
+    {
+      font-size: 11px;
+    }
+}
+#slide-register-text
+{
+    position: absolute;
+    top: 2.5vw;
+    color: white;
+}
+#slide-register-text h1
+{
+    font-family: 'Work Sans', sans-serif;
+    line-height: initial;
+}
+#slide-register-text h3
+{
+    letter-spacing: 0.3vw;
+}
+
+/* YOI Details */
+.about-yoi
+{
+    margin: 2.5vw auto;
+}
+#yoi-details
+{
+    height: 14vw;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    background: #1B9DDB;
+    color: white;
+}
+.yoi-details-box
+{
+    display: flex;
+}
+.yoi-details-box img
+{
+    margin: auto;
+    height: 9vw;
+}
+
+/* About YOIMUN */
+#about-yoimun
+{
+    display: flex;
+    /* grid-template-columns: 75% 25%; */
+}
+.corporate-identity-photo
+{
+    margin: auto;
+    padding-left: 5px;
+    width: 100%;
+}
+.corporate-identity-photo img
+{
+    /* height: 510px; */
+    width: 100%;
+}
+.mascot-photo
+{
+  margin: auto;
+  padding-left: 5px;
+}
+.mascot-photo img
+{
+  height: 400px;
+}
+
+/* Why YOIMUN */
+#why-yoimun-box
+{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 2.5vw;
+}
+#why-yoimun-box img
+{
+    height: 9vw;
+}
+.why-yoimun-box-design
+{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 25px;
+    width: 33%;
+    height: 35vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.why-yoimun-box-design h3
+{
+    text-align: center;
+}
+.why-yoimun-box-design p
+{
+    text-align: center;
+    font-size: 1.5vw;
+    padding-top: 1vw;
+}
+#unparalled-debate
+{
+    background: linear-gradient(#FF671F, white);
+}
+#fest-like-experience
+{
+    background: white;
+}
+#fly-to-un
+{
+    background: linear-gradient(#046A38, white);
+}
+.why-yoimun-box-design:hover
+{
+    box-shadow: 5px 5px 5px 5px inherit;
+}
+
+/* Founder's Message */
+#founders-message
+{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background: #F0F0F0;
+    margin-bottom: 4.5vw;
+    padding: 3vw;
+    border-radius: 4.5vw;
+}
+#founders-photo
+{
+    margin: auto;
+}
+#founders-photo img
+{
+    height: 28vw;
+    border-radius: 50px;
+}
+#founders-details
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#founders-details p
+{
+    font-size: 1.3vw;
+}
+
+/* Footer */
+footer
+{
+    color: white;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    text-align: center;
+    padding: 20px;
+    align-items:center;
+}
+footer p
+{
+    font-family: 'Tilt Neon', cursive;
+    margin: 0;
+}
+#social-icons a
+{
+    text-decoration: none;
+}
+footer img
+{
+    height: 3vw;
+    padding: 13px;
+}
+footer p
+{
+    text-align: center;
+}
+
+/*  */
+/* ABOUT US */
+/*  */
+
+/* About Us Details */
+#about-us-details
+{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    background-color: #1B9DDB;
+    width: 70%;
+    margin: 50px auto;
+    border-radius: 4vw;
+    /* padding: 20px; */
+}
+#about-us-details-box-line
+{
+    text-align: center;
+    margin: auto;
+}
+
+/* Itinerary */
+#itinerary
+{
+    padding-bottom: 50px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 20% 46% 33%;
+}
+#itinerary .mySlides img
+{
+    height:35vw;
+}
+/* Event Participation */
+#event-participation
+{
+    display: flex;
+    flex-direction: column;
+    margin: 5vw;
+}
+#event-participation img
+{
+    margin: auto;
+    height: 40vw;
+}
+
+#about-us-heading
+{
+    background: url('../Photos/About\ Us\ Cover\ Image.png');
+    height: 32vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#about-us-heading h1
+{
+    color: white;
+    font-size: 6rem;
+}
+#about-us-intro
+{
+    margin: 5vw;
+}
+#mission-vision
+{
+    margin: 5vw;
+}
+#mission-vision thead th
+{
+    background: #1877F2;
+    width: 50%;
+}
+#mission-vision tbody
+{
+    background: linear-gradient(#2B4A9D, transparent);
+    text-align: center;
+}
+#index-page-h1
+{
+    font-size: 4.5rem;
+}
+
+/*  */
+/* Committee's */
+/*  */
+/* JCC */
+#commitee-body
+{
+    padding: 0px;
+    margin: 0;
+    background: url('../Photos/Committee\ BG.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+/* Committee Name */
+.committee-name
+{
+    color: white;
+    height: 45vw;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+.committee-name h1
+{
+    margin: 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 7.5vw;
+}
+.committee-name h3
+{
+    font-family: 'Oswald', sans-serif;
+    margin: 0px 10px;
+    font-size: 3.7vw;
+}
+
+/* Committee Name */
+#jcc-name
+{
+    background: url('../Photos/JCC\ bg.jpg') no-repeat;
+    background-size: 100%;
+}
+#unhrc-name
+{
+    background: url('../Photos/UNHRC\ BG.jpg') no-repeat;
+    background-size: 100%;
+}
+#uncsw-name
+{
+    background: url('../Photos/UNCSW\ BG.jpg') no-repeat;
+    background-size: 100%;
+}
+#ccpcj-ecosoc-name
+{
+    background: url('../Photos/CCPCJ\ ECOSOC.png') no-repeat;
+    background-size: 100%;
+}
+#disec-name
+{
+    background: url('../Photos/UNGA\ DISEC\ BG.jpg') no-repeat;
+    background-size: 100%;
+}
+#unsc-ctc-name
+{
+    background: url('../Photos/UNSC\ CTC\ BG.jpeg') no-repeat;
+    background-size: 100%;
+}
+#g20-name
+{
+    background: url('../Photos/G20\ BG.jpg') no-repeat;
+    background-size: 100%;
+}
+#eu-name
+{
+    background: url('../Photos/EU\ BG.jpeg') no-repeat;
+    background-size: 100%;
+}
+#ipc-name
+{
+    background: url('../Photos/International\ Pres\ BG.png') no-repeat;
+    background-size: 100%;
+}
+#aippm-name
+{
+    background: url('../Photos/AIPPM\ BG.png') no-repeat;
+    background-size: 100%;
+}
+#unhlpf-name
+{
+    background: url('../Photos/UNHLPF\ Bg.jpg') no-repeat;
+    background-size: 100%;
+}
+#unsc-name
+{
+    background: url('../Photos/UNSC\ BG.jpg') no-repeat;
+    background-size: 100%;
+}
+#y20-name
+{
+    background: url('../Photos/Y20\ BG.jpg') no-repeat;
+    background-size: 100%;
+}
+
+/* JCC Intro */
+#committee-intro p
+{
+    color: white;
+    padding: 3.5vw;
+    font-family: 'Archivo Narrow', sans-serif ; 
+    font-size: 2vw; 
+    text-align: center;
+        letter-spacing: 0.6px;
+}
+
+/* Background Guide */
+#committee-background-guide button
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    background-color: rgba(50, 169, 224);
+    font-family: 'Oswald', sans-serif;
+    border: 0px;
+    height: 3.5vw;
+    width: 10vw;
+    font-size: 1.2vw;
+    font-weight: bold;
+}
+
+/* Executive Board */
+#committee-executive-board
+{
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+#committee-executive-board h1
+{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 0;
+}
+#committee-eb-details
+{
+  	display: grid;
+  	grid-template-columns: auto auto;
+}
+.committee-eb-intro
+{
+  	margin: auto;
+  	text-align: center;
+}
+.committee-eb-intro img
+{
+    height: 20vw;
+}
+
+/*  */
+/* Collaborations */
+/*  */
+#collaborations-h1
+{
+    text-align: center;
+    font-size: 6rem;
+}
+#collab-photos
+{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+#collab-photos img
+{
+    margin: auto;
+    height: 12vw;
+}
+#present-collab-photos
+{
+  display:flex;
+  flex-direction: column;
+}
+#present-collab-photos img
+{
+    margin: auto;
+    height: 30vw;
+    padding-bottom: 5vw;
+}
+/*  */
+/* PAST SPEAKERS */
+/*  */
+
+/* Past Speakers List */
+#past-speakers-list
+{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 9vw 4vw 9vw;
+    background: #FDB860;
+}
+#past-speakers-list h1
+{
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 5rem;
+}
+#past-speakers-list h3
+{
+    font-family: 'Inter', sans-serif;
+    font-size: 3vw;
+}
+#past-speakers-list p
+{
+    font-family: 'Nunito Sans', sans-serif;
+}
+#past-speakers-list div
+{
+    display: grid;
+    align-items: center;
+}
+.speaker-right
+{
+    grid-template-columns: 15% auto;
+}
+.speaker-right h2
+{
+    text-align: left;
+}
+.speaker-left
+{
+    grid-template-columns: auto 15%;
+}
+.speaker-left h2
+{
+    text-align: right;
+}
+.speaker-left div 
+{
+    text-align: right;
+}
+#past-speakers-list img
+{
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    margin: auto;
+}
+.past-speakers-text h3,.past-speakers-text p
+{
+    margin: 0px;
+}
+
+/*  */
+/* NATIONAL ADVISORY BOARD */
+/*  */
+#advisory-board-h1
+{
+    background: url('../Photos/National\ Advisor\ BG.png') no-repeat;
+    background-size: 100%;
+    height: 25vw;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#advisory-board-h1 h1
+{
+    font-size: 4.5rem;
+}
+.nab-box h2
+    {
+        font-size: 25vw;
+    }
+#national-advisory-board
+{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.nab-box
+{
+    text-align: center;
+}
+.nab-box h2
+{
+    font-size: 2rem;
+    margin-top: 0;
+}
+.nab-box img
+{
+    height: 300px;
+}
+
+/*  */
+/* CONTACT US */
+/*  */
+#get-in-touch
+{
+    background: url("../Photos/Contact\ Us\ B.png") no-repeat;
+    color: white;
+    text-align: center;
+    padding: 30px 0px;
+}
+#get-in-touch h1
+{
+    font-size: 6rem;
+}
+#get-in-touch iframe
+{
+    width: 100%;
+    height: 91vw;
+}
+
+/*  */
+/* From 700px to 1000px adjusting the padding and margins */
+/*  */
+@media only screen and (max-width:1000px) and (min-width:700px)
+{
+    .pad-left
+    {
+        padding-left: 50px;
+        padding-right: 50px;
+    }   
+    .margin-left
+    {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    #advisory-board-h1
+    {
+        height: 30vw;
+    }
+    #get-in-touch iframe
+    {
+        height: 115vw;
+    }
+    /* #about-us-intro p */
+    p
+    {
+        font-size: 1.3rem;
+    }
+    #index-page-h1
+    {
+        font-size: 3.5rem;
+    }
+    .mascot-photo img
+    {
+        height: 200px;
+    }
+}
+@media only screen and (min-width:800px)
+{
+    footer p
+{
+    font-size: 1.3vw;
+}
+}
+@media only screen and (max-width:800px)
+{
+    footer
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    footer p
+    {
+        font-size: 2.3vw;
+    }
+    footer div
+    {
+        display: flex;
+        align-items: center;
+    }
+    #social-icons a img
+    {
+        height: 3.5vw;
+    }
+    /* .committee-name
+    {
+        height: 55vw;
+    } */
+    #collaborations-h1
+    {
+        font-size:4.5rem;
+    }
+    #get-in-touch iframe
+    {
+        height: 130vw;
+    }
+    #about-us-heading
+    {
+        height: 45vw;
+    }
+    /* #about-us-intro p */
+    p
+    {
+        font-size: 1.2rem;
+    }
+}
+@media only screen and (max-width:900px)
+{
+    .topnav
+    {
+        margin: 0%;
+    }
+    
+}
+@media only screen and (min-width:700px)
+{
+    #advisory-board-h1
+    {
+        background: url('../Photos/Advisory\ Board\ BG\ -\ 700.png') no-repeat;
+        background-size: 100%;
+    }
+    #get-in-touch h1
+    {
+            font-size: 5rem;
+    }
+    
+}
+@media only screen and (max-width:700px)
+{
+    #national-advisory-board
+    {
+        display: block;
+    }
+    
+    #advisory-board-h1
+    {
+        height: 45vw;
+    }
+    #get-in-touch iframe
+    {
+        height: 160vw;
+    }
+    #index-page-h1
+    {
+        font-size: 3rem;
+    }
+    #itinerary #slide-dot 
+    {
+        margin-top: -4.5vw;
+        left: 50px;
+    }
+    .corporate-identity-photo
+    {
+        margin: auto;
+        padding-left: 5px;
+        width: 100%;
+    }
+    .corporate-identity-photo img
+    {
+        transform: rotate(90deg);
+        width: 100%;
+    }
+}
+@media only screen and (max-width:600px)
+{
+    #eu-name
+    {
+        background: url('../Photos/European\ Union\ BG\ 600.png') no-repeat;
+        background-size: 100%;
+    }
+    #committee-eb-details 
+    {
+        display: block;
+    }
+    .committee-eb-intro 
+    {
+        width: 100%;
+    }
+    .committee-eb-intro img 
+    {
+        height: 130px;
+    }
+    #committee-intro p
+    {
+        font-size: 1rem;
+    }    
+    #get-in-touch iframe
+    {
+        height: 205vw;
+    }
+    #event-participation h1
+    {
+        font-size: 3.5rem;
+    }
+    #mission-vision
+    {
+        letter-spacing: 0.15vw;
+        margin: 20px;
+    }
+    #event-participation img
+    {
+        height: 60vw;
+    }
+    #committee-executive-board h1
+    {
+        font-size: 2.5rem;
+    }
+    .committee-name
+    {
+        height: 60vw;
+    }
+    .committee-name h3
+    {
+        letter-spacing: 1px;
+    }
+    #why-yoimun-box {
+        padding-bottom: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+    #why-yoimun-box div
+    {
+        width: 80%;
+        height: 100%;
+    }
+    #why-yoimun-box h3
+    {
+        font-size: 1.35rem;
+    }
+    #why-yoimun-box img
+    {
+        height: 3.2rem;
+    }
+    #why-yoimun-box p
+    {
+        font-size: 0.75rem;
+    }
+    #yoi-details
+    {
+        flex-direction: column;
+        height: 100%;
+    }
+    #yoi-details h2
+    {
+        font-size: 5vw;
+    }
+    #yoi-details img
+    {
+        height: 18vw;
+    }
+}
+
+/* @media only screen and (max-width:900px) and (min-width:700px)
+{
+    p{
+        font-size: 1.5vw;
+    }
+} */
+
+@media only screen and (max-width:700px) and (min-width:480px)
+{
+  #present-collab-photos img
+    {
+        height: 40vw;
+        /* padding-bottom: 30px; */
+    }
+    .pad-left
+    {
+        padding-left: 2vw;
+        padding-right: 2vw;
+        margin-bottom: 0;
+    }   
+    .margin-left
+    {
+        margin-left: 2vw;
+        margin-right: 2vw;
+    }
+    p{
+        font-size: 1.1rem;
+    }
+    #about-yoimun
+    {
+        padding: 0px 2vw;
+    }
+    #about-us-details
+    {
+        width: 85%;
+    }
+    #mission-vision tbody tr td h3
+    {
+        font-size: 2.5vw;
+    }
+    
+    #itinerary
+    {
+        grid-template-columns: 23% 43% 33%;
+    }
+    .mascot-photo img
+    {
+        height: 300px;
+    }
+    
+    .mascot-photo-itinerary img
+    {
+        height: 250px;
+    }
+    #itinerary .mySlides img {
+        height: 55vw;
+    }
+    /* #why-yoimun-box div
+    {
+        width: 80%;
+        height: 70vh;
+    }
+    #why-yoimun-box h3
+    {
+        font-size: 4vw;
+    }
+    #why-yoimun-box img
+    {
+        height: 3.2rem;
+    }
+    #why-yoimun-box p
+    {
+        font-size: 2.2vw;
+    } */
+    #founders-details p
+{
+    font-size: 1.7vw;
+}
+}
+
+@media only screen and (max-width:480px)
+{
+    #collab-photos {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    #collab-photos img
+    {
+        height: 25vw;
+    }
+  #present-collab-photos img
+    {
+        height: 40vw;
+    }
+    .nab-box img
+    {
+        height: 220px;
+    }
+    #advisory-board-h1
+    {
+        height: 54vw;
+    }
+    #advisory-board-h1 h1
+    {
+        font-size: 3.2rem;
+    }
+    .nab-box h2
+    {
+        font-size: 2rem;
+    }
+    #about-us-details
+    {
+        width: 80%;
+    }
+    #about-us-heading 
+    {
+        height: 80vw;
+    }
+    #about-us-heading h1 
+    {
+        font-size: 5rem;
+    }
+    /* #about-us-intro p  */
+    p
+    {
+        font-size: 1rem;
+    }
+    #mission-vision tbody tr td h3
+    {
+        font-size: 0.8rem;
+    }
+    #committee-intro p
+    {
+        font-size: 0.75rem;
+    }    
+    footer p {
+        font-size: 2.8vw;
+    }
+    #index-page-h1
+    {
+        font-size: 2.5rem;
+    }
+    .mascot-photo img
+    {
+        height: 250px;
+    }
+    .corporate-identity-photo
+    {
+        display: none;
+    }
+    #itinerary
+    {
+        grid-template-columns: 30% 54%;
+    }
+    #itinerary .mySlides img 
+    {
+        height: 60vw;
+    }
+    .mascot-photo-itinerary img
+    {
+        height: 200px;
+    }
+    #itinerary #slide-dot 
+    {
+        margin-top: -6.5vw;
+        left: 4vw;
+    }
+    /* #why-yoimun-box {
+        padding-bottom: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+    #why-yoimun-box div
+    {
+        width: 80%;
+        height: 100%;
+    }
+    #why-yoimun-box h3
+    {
+        font-size: 1.35rem;
+    }
+    #why-yoimun-box img
+    {
+        height: 3.2rem;
+    }
+    #why-yoimun-box p
+    {
+        font-size: 0.75rem;
+    } */
+    
+}
+
+@media only screen and (max-width:480px) and (min-width:420px)
+{
+    .pad-left
+    {
+        padding-left: 2vw;
+        padding-right: 2vw;
+    }   
+    .margin-left
+    {
+        margin-left: 2vw;
+        margin-right: 2vw;
+    }
+    p{
+        font-size: 1rem;
+    }
+    #about-yoimun
+    {
+        padding: 2vw;
+    }
+    .about-yoi
+    {
+        margin: 30px auto 0 auto;
+    }
+    /* #why-yoimun-box
+    {
+        padding-bottom: 0;
+    } */
+    #get-in-touch iframe
+    {
+        height: 250vw;
+    }
+}
+
+@media only screen and (max-width:420px)
+{
+    .pad-left
+    {
+        padding-left: 1.5vw;
+        padding-right: 1.5vw;
+    }   
+    .margin-left
+    {
+        margin-left: 1.5vw;
+        margin-right: 1.5vw;
+    }
+    #about-yoimun
+    {
+        padding: 2vw;
+    } 
+    p
+    {
+        font-size: 0.8rem;
+    }
+    .why-yoimun-box-design
+    {
+        height: 40vw;
+    }
+    #slide-dot
+    {
+        margin-top: -6vw;;
+    }
+    #founders-message 
+    {
+        width: 80%;
+        margin: 0px auto 4.5vw auto;
+    }
+    #get-in-touch iframe
+    {
+        height: 280vw;
+    }
+    #collaborations-h1
+    {
+        font-size:3rem;
+    }
+    #get-in-touch h1 {
+        font-size: 4rem;
+    }
+    #founders-details p
+{
+    font-size: 2vw;
+}
+}

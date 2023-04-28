@@ -1,0 +1,161 @@
+body
+{
+    padding: 0px;
+    margin: 0;
+    background: url('../Photos/Lok\ Sabha\ full\ bg.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+.pad-left
+{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.no-pad-left
+{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+/* Navigation Bar */
+nav
+{
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    background-color: white;
+}
+#header-image img
+{
+    height: 100px;
+}
+
+#header-menu ul
+{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+#header-menu ul li a
+{
+    color: black;
+    text-decoration: none;
+}
+.dropbtn
+{
+    background-color: white;
+    color: black;
+    font-size: initial;
+    border: none;
+    cursor: pointer;
+    font-family: initial;
+}
+.dropdown-content 
+{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    /* margin-top: 15px; */
+}
+.dropdown-content a
+{
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown:hover .dropdown-content
+{
+    display: block;
+}
+.dropdown-content a:hover
+{
+    background-color: #1B9DDB;
+}
+
+/* UNCSW Name */
+#uncsw-name
+{
+    color: black;
+    height: 555px;
+    background: url('../Photos/Lok\ Sabha\ bg.jpg') no-repeat;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+#uncsw-name h1
+{
+    margin-top: 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 90px;
+}
+#uncsw-name h3
+{
+    font-family: 'Oswald', sans-serif;
+    margin-top: 0px;
+    font-size: 50px;
+}
+
+/* UNCSW Intro */
+#uncsw-intro
+{
+    color: white;
+    padding: 50px;
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: x-large;
+    text-align: center;
+}
+
+/* Background Guide */
+#background-guide button
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    background-color: rgba(50, 169, 224);
+    font-family: 'Oswald', sans-serif;
+    border: 0px;
+    height: 40px;
+    width: 150px;
+    font-size: 1.2vw;
+}
+
+/* Executive Board */
+#executive-board
+{
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+#executive-board h1
+{
+    text-align: center;
+}
+#eb-details
+{
+    display: flex;
+    justify-content: space-between;
+}
+.eb-intro
+{
+    width: 30%;
+    text-align: center;
+}
+
+/* Footer */
+footer
+{
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+}

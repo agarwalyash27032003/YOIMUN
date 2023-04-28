@@ -1,0 +1,120 @@
+body
+{
+    padding: 0px;
+    margin: 0;
+}
+.pad-left
+{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.no-pad-left
+{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+/* Navigation Bar */
+nav
+{
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+}
+#header-image img
+{
+    height: 100px;
+}
+
+#header-menu ul
+{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+#header-menu ul li a
+{
+    color: black;
+    text-decoration: none;
+}
+.dropbtn
+{
+    background-color: white;
+    color: black;
+    font-size: initial;
+    border: none;
+    cursor: pointer;
+    font-family: initial;
+}
+.dropdown-content 
+{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    /* margin-top: 15px; */
+}
+.dropdown-content a
+{
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown:hover .dropdown-content
+{
+    display: block;
+}
+.dropdown-content a:hover
+{
+    background-color: #1B9DDB;
+}
+
+/* About Us Intro */
+#about-us-intro
+{
+    background: url("../Photos/About\ Us\ Top\ Image.png") no-repeat;
+    background-size: contain;
+    background-position: 100%;
+}
+
+/* About Us Details */
+#about-us-details
+{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background-color: #1B9DDB;
+    width: 70%;
+    margin: 50px auto;
+    border-radius: 40px;
+    padding: 20px;
+}
+#about-us-details-box-line
+{
+    text-align: center;
+    margin: auto;
+}
+
+/* Event Participation */
+#event-participation
+{
+    display: flex;
+    flex-direction: column;
+}
+#event-participation img
+{
+    margin: auto;
+}
+
+/* Footer */
+footer
+{
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+}
